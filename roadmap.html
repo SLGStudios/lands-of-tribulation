@@ -119,7 +119,7 @@ width:100%;
 height:auto;
 ">
 <div
-onclick="alert('Foundations clicked!')"
+onclick="showFoundation()"
 style="
 position:absolute;
 top:12%;
@@ -156,9 +156,9 @@ border-radius:12px;
 
 <h2>Current Milestone</h2>
 
-<h3>🏕 Foundations</h3>
+<h3 id="milestone-title">🏕 Foundations</h3>
 
-<p>
+<p id="milestone-description">
 Build the foundations of the project before development begins.
 </p>
 
@@ -276,6 +276,20 @@ All third-party trademarks, logos, and copyrighted materials are the property of
 </div>
 
 </footer>
+
+<script>
+
+function showFoundation() {
+
+    document.getElementById("milestone-title").innerHTML =
+        "🏕 Foundations";
+
+    document.getElementById("milestone-description").innerHTML =
+        "Build the foundations of the project before development begins.";
+
+}
+
+</script>
 
 </body>
 
