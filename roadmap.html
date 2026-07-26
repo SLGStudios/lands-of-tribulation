@@ -119,7 +119,17 @@ width:100%;
 height:auto;
 ">
 <div
-onclick="showFoundation()"
+onclick="showMilestone(
+'🏕 Foundations',
+'Build the foundations of the project before development begins.',
+`
+<p>✔ Choose Engine</p>
+<p>✔ Website</p>
+<p>✔ Project Setup</p>
+<p>🔨 Core Systems</p>
+<p>○ Art Direction</p>
+`
+)"
 style="
 position:absolute;
 top:12%;
@@ -143,7 +153,17 @@ transition:.25s;
 </div>
 
 <div
-onclick="showGameplay()"
+onclick="showMilestone(
+'⚔️ Core Gameplay',
+'Develop the core mechanics that define Lands of Tribulation.',
+`
+<p>○ Overworld Tile Movement</p>
+<p>○ Turn-Based Combat</p>
+<p>○ Equipment System</p>
+<p>○ Shops</p>
+<p>○ Saving & Loading</p>
+`
+)"
 style="
 position:absolute;
 top:28%;
@@ -305,37 +325,13 @@ All third-party trademarks, logos, and copyrighted materials are the property of
 
 <script>
 
-function showFoundation() {
+function showMilestone(title, description, objectives) {
 
-    document.getElementById("milestone-title").innerHTML =
-        "🏕 Foundations";
+    document.getElementById("milestone-title").innerHTML = title;
 
-    document.getElementById("milestone-description").innerHTML =
-        "Build the foundations of the project before development begins.";
-document.getElementById("milestone-objectives").innerHTML = `
-<p>✔ Choose Engine</p>
-<p>✔ Website</p>
-<p>✔ Project Setup</p>
-<p>🔨 Core Systems</p>
-<p>○ Art Direction</p>
-`;
-}
+    document.getElementById("milestone-description").innerHTML = description;
 
-function showGameplay() {
-
-    document.getElementById("milestone-title").innerHTML =
-        "⚔️ Core Gameplay";
-
-    document.getElementById("milestone-description").innerHTML =
-        "Develop the core mechanics that define Lands of Tribulation.";
-
-    document.getElementById("milestone-objectives").innerHTML = `
-<p>○ Overworld Tile Movement</p>
-<p>○ Turn-Based Combat</p>
-<p>○ Equipment System</p>
-<p>○ Shops</p>
-<p>○ Saving & Loading</p>
-`;
+    document.getElementById("milestone-objectives").innerHTML = objectives;
 
 }
 
