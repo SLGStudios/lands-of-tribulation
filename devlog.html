@@ -1,127 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dev Log | Lands of Tribulation</title>
+<body style="margin:0; background:#111; color:white; font-family:Arial, Helvetica, sans-serif;">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#111;
-    color:#e5e5e5;
-    line-height:1.7;
-}
-
-.hero{
-    height:45vh;
-    background:
-        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
-        url("images/devlog.png") center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:3rem;
-    letter-spacing:2px;
-    color:#fff;
-}
-
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-.intro{
-    text-align:center;
-    margin-bottom:60px;
-    color:#cfcfcf;
-}
-
-.log-entry{
-    margin-bottom:60px;
-    padding-bottom:35px;
-    border-bottom:1px solid #333;
-}
-
-.log-entry:last-child{
-    border-bottom:none;
-}
-
-.log-entry h2{
-    color:#d4af37;
-    margin-bottom:20px;
-}
-
-.log-entry ul{
-    margin-left:20px;
-}
-
-.log-entry li{
-    margin-bottom:10px;
-}
-
-footer{
-    text-align:center;
-    padding:40px;
-    color:#777;
-    border-top:1px solid #222;
+section{
+    scroll-margin-top:90px;
 }
 </style>
 
-</head>
-<body>
+<!-- NAVIGATION -->
 
-<header class="hero">
-    <div>
-        <h1>Development Log</h1>
-    </div>
-</header>
+<nav style="
+position:fixed;
+top:0;
+left:0;
+right:0;
+padding:18px 40px;
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(8px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+">
 
-<section class="container">
-
-<div class="intro">
-    <p>
-        A chronological record of development for <strong>Lands of Tribulation</strong>.
-        Updated weekly with progress, completed work, and what's next.
-    </p>
+<div style="
+font-size:24px;
+font-weight:bold;
+letter-spacing:1px;
+">
+Lands of Tribulation
 </div>
 
-<div class="log-entry">
-    <h2>Week 31 — July 27, 2026</h2>
+<div>
 
-    <ul>
-        <li>Created the Gameplay page.</li>
-        <li>Added the Dev Log page.</li>
-        <li>Continued work on the Tour of Emberforge showcase.</li>
-        <li>Prepared the public demo for release.</li>
-    </ul>
+<a href="index.html" style="color:white; text-decoration:none; margin-left:20px;">Home</a>
+
+<a href="roadmap.html" style="color:white; text-decoration:none; margin-left:20px;">Roadmap</a>
+
+<a href="devlog.html" style="color:white; text-decoration:none; margin-left:20px;">Dev Log</a>
+
 </div>
 
-<div class="log-entry">
-    <h2>Week 30 — July 20, 2026</h2>
+</nav>
 
-    <ul>
-        <li>Finished the Gameplay Reveal trailer.</li>
-        <li>Expanded the website.</li>
-        <li>Began work on the public roadmap.</li>
-    </ul>
+<!-- HERO -->
+
+<section style="
+background:url('images/devlog.png') center/cover no-repeat;
+min-height:60vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+">
+
+<div style="
+background:rgba(0,0,0,.70);
+padding:60px;
+text-align:center;
+max-width:850px;
+border-radius:12px;
+">
+
+<h1 style="margin-top:0;">Development Log</h1>
+
+<p style="line-height:1.8;">
+A week-by-week record of development for <strong>Lands of Tribulation™</strong>.
+</p>
+
+<p style="line-height:1.8;">
+Every update reflects our progress as we continue building the world of Tribulation.
+</p>
+
 </div>
 
 </section>
 
-<footer>
-    Lands of Tribulation • Development Log
+<!-- DEV LOG -->
+
+<section style="max-width:900px; margin:auto; padding:80px 30px;">
+
+<h2>Week 31 — July 27, 2026</h2>
+
+<ul style="line-height:2;">
+<li>Created the Gameplay page.</li>
+<li>Created the Development Log page.</li>
+<li>Continued work on the Tour of Emberforge showcase.</li>
+<li>Prepared the public demo for release.</li>
+</ul>
+
+<p><strong>Next Week</strong></p>
+
+<ul style="line-height:2;">
+<li>Release the public demo.</li>
+<li>Publish the public roadmap.</li>
+<li>Continue gameplay improvements.</li>
+</ul>
+
+<hr style="margin:60px 0; border:0; border-top:1px solid #333;">
+
+<h2>Week 30 — July 20, 2026</h2>
+
+<ul style="line-height:2;">
+<li>Finished the Gameplay Reveal trailer.</li>
+<li>Expanded the website.</li>
+<li>Began work on the roadmap.</li>
+</ul>
+
+<hr style="margin:60px 0; border:0; border-top:1px solid #333;">
+
+<h2>Week 29 — July 13, 2026</h2>
+
+<ul style="line-height:2;">
+<li>Continued development.</li>
+<li>Internal testing and planning.</li>
+</ul>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer style="
+background:#0a0a0a;
+padding:50px 30px;
+text-align:center;
+border-top:1px solid #222;
+">
+
+<h3 style="
+margin-top:0;
+margin-bottom:20px;
+font-weight:normal;
+letter-spacing:1px;
+">
+Follow Development
+</h3>
+
+<p style="margin-bottom:35px;">
+
+<a href="https://x.com/LOTRPG" target="_blank" style="
+color:white;
+text-decoration:none;
+margin:0 14px;
+">
+X
+</a>
+
+<a href="#" style="
+color:white;
+text-decoration:none;
+margin:0 14px;
+">
+YouTube
+</a>
+
+<a href="https://github.com/SLGStudios/lands-of-tribulation" target="_blank" style="
+color:white;
+text-decoration:none;
+margin:0 14px;
+">
+GitHub
+</a>
+
+</p>
+
+<div style="
+max-width:900px;
+margin:auto;
+font-size:13px;
+line-height:1.8;
+color:#9a9a9a;
+">
+
+<p style="margin-bottom:0;">
+&copy; 2026 SLG Studios™. All rights reserved.
+</p>
+
+</div>
+
 </footer>
 
 </body>
