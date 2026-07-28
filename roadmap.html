@@ -318,6 +318,7 @@ const milestones = {
     foundation: {
         title: "🏕 Foundations",
         description: "Build the foundations of the project before development begins.",
+        progress: "70%",
         objectives: `
 <p>✔ Choose Engine</p>
 <p>✔ Website</p>
@@ -330,6 +331,7 @@ const milestones = {
     gameplay: {
         title: "⚔️ Core Gameplay",
         description: "Develop the core mechanics that define Lands of Tribulation.",
+        progress: "15%",
         objectives: `
 <p>○ Overworld Tile Movement</p>
 <p>○ Turn-Based Combat</p>
@@ -351,6 +353,9 @@ function showMilestone(milestone) {
 
     document.getElementById("milestone-objectives").innerHTML =
         milestone.objectives;
+
+    document.getElementById("milestone-progress").style.width =
+        milestone.progress;
 
 }
 
