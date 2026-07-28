@@ -118,18 +118,11 @@ display:block;
 width:100%;
 height:auto;
 ">
+
+<!-- Foundations -->
+
 <div
-onclick="showMilestone(
-'🏕 Foundations',
-'Build the foundations of the project before development begins.',
-`
-<p>✔ Choose Engine</p>
-<p>✔ Website</p>
-<p>✔ Project Setup</p>
-<p>🔨 Core Systems</p>
-<p>○ Art Direction</p>
-`
-)"
+onclick="showMilestone(milestones.foundation)"
 style="
 position:absolute;
 top:12%;
@@ -152,18 +145,10 @@ transition:.25s;
 
 </div>
 
+<!-- Core Gameplay -->
+
 <div
-onclick="showMilestone(
-'⚔️ Core Gameplay',
-'Develop the core mechanics that define Lands of Tribulation.',
-`
-<p>○ Overworld Tile Movement</p>
-<p>○ Turn-Based Combat</p>
-<p>○ Equipment System</p>
-<p>○ Shops</p>
-<p>○ Saving & Loading</p>
-`
-)"
+onclick="showMilestone(milestones.gameplay)"
 style="
 position:absolute;
 top:28%;
