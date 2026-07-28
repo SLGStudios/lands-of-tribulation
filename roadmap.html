@@ -325,13 +325,44 @@ All third-party trademarks, logos, and copyrighted materials are the property of
 
 <script>
 
-function showMilestone(title, description, objectives) {
+const milestones = {
 
-    document.getElementById("milestone-title").innerHTML = title;
+    foundation: {
+        title: "🏕 Foundations",
+        description: "Build the foundations of the project before development begins.",
+        objectives: `
+<p>✔ Choose Engine</p>
+<p>✔ Website</p>
+<p>✔ Project Setup</p>
+<p>🔨 Core Systems</p>
+<p>○ Art Direction</p>
+`
+    },
 
-    document.getElementById("milestone-description").innerHTML = description;
+    gameplay: {
+        title: "⚔️ Core Gameplay",
+        description: "Develop the core mechanics that define Lands of Tribulation.",
+        objectives: `
+<p>○ Overworld Tile Movement</p>
+<p>○ Turn-Based Combat</p>
+<p>○ Equipment System</p>
+<p>○ Shops</p>
+<p>○ Saving & Loading</p>
+`
+    }
 
-    document.getElementById("milestone-objectives").innerHTML = objectives;
+};
+
+function showMilestone(milestone) {
+
+    document.getElementById("milestone-title").innerHTML =
+        milestone.title;
+
+    document.getElementById("milestone-description").innerHTML =
+        milestone.description;
+
+    document.getElementById("milestone-objectives").innerHTML =
+        milestone.objectives;
 
 }
 
